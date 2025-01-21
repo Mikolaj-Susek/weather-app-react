@@ -1,0 +1,27 @@
+{
+  "latitude": 52.52,
+  "longitude": 13.419998,
+  "generationtime_ms": 0.06389617919921875,
+  "utc_offset_seconds": 3600,
+  "timezone": "Europe/Berlin",
+  "timezone_abbreviation": "GMT+1",
+  "elevation": 38.0,
+  "current_units": {
+    "time": "iso8601",
+    "interval": "seconds",
+    "temperature_2m": "°C",
+    "relative_humidity_2m": "%",
+    "weather_code": "wmo code",
+    "wind_speed_10m": "km/h",
+    "wind_direction_10m": "°"
+  },
+  "current": {
+    "time": "2025-01-20T21:15",
+    "interval": 900,
+    "temperature_2m": -0.3,
+    "relative_humidity_2m": 93,
+    "weather_code": 1,
+    "wind_speed_10m": 6.2,
+    "wind_direction_10m": 277
+  }
+}
