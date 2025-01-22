@@ -54,7 +54,7 @@ function CurrentWeather() {
             </div>
             <div className="other-infos">
                 {otherInfoWidgets.map(({id, icon, unit, value, name}) => (
-                   <div className="widget">
+                   <div key={id} className="widget">
                        <div className="widget-container">
                            <div className="info">
                                <i className={`bi bi-${icon}`}></i>

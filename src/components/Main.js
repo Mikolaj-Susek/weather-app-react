@@ -8,8 +8,6 @@ function Main() {
 
     const data = getDailyForecast();
 
-    console.log(data);
-
     return (
         <div className="Main">
             <CurrentWeather />
