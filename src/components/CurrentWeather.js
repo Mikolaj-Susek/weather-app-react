@@ -1,12 +1,15 @@
 import React from "react"
-import {getCurrentWeather} from "../api";
 import "../styles/components/CurrentWeather.scss";
-import {getWindDirection} from "../utils"
-import WeatherIcon from "./WeatherIcon"
+import { getWindDirection } from "../utils";
+import WeatherIcon from "./WeatherIcon";
+import Place from "./Place";
 
-function CurrentWeather() {
+function CurrentWeather({ data }) {
 
-    const data = getCurrentWeather();
+    if (!data || !data.current) {
+        return <div>Loading weather data...</div>;
+    }
+
     const {
         temperature_2m,
         weather_code,
@@ -17,11 +20,11 @@ function CurrentWeather() {
 
     const otherInfoWidgets = [
         {
-           id: 1,
-           icon: "tornado",
-           unit: "km/h",
-           value: wind_speed_10m,
-           name: "Wind speed"
+            id: 1,
+            icon: "tornado",
+            unit: "km/h",
+            value: wind_speed_10m,
+            name: "Wind speed"
         },
         {
             id: 2,
@@ -50,26 +53,25 @@ function CurrentWeather() {
                         {temperature_2m} °C
                     </div>
                 </div>
-                <div className="summary">Dąbrowa Górnicza</div>
+                <Place />
             </div>
             <div className="other-infos">
-                {otherInfoWidgets.map(({id, icon, unit, value, name}) => (
-                   <div key={id} className="widget">
-                       <div className="widget-container">
-                           <div className="info">
-                               <i className={`bi bi-${icon}`}></i>
-                           </div>
-                           <div className="value">
-                               {value} {unit}
-                           </div>
-                           <div className="name">{name}</div>
-                       </div>
-                   </div>
+                {otherInfoWidgets.map(({ id, icon, unit, value, name }) => (
+                    <div key={id} className="widget">
+                        <div className="widget-container">
+                            <div className="info">
+                                <i className={`bi bi-${icon}`}></i>
+                            </div>
+                            <div className="value">
+                                {value} {unit}
+                            </div>
+                            <div className="name">{name}</div>
+                        </div>
+                    </div>
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default CurrentWeather;
-

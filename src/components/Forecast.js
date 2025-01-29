@@ -4,6 +4,8 @@ import HorizontallyScrollable from "./HorizontallyScrollable";
 
 function Forecast({ title, data }) {
 
+    data = data.daily;
+
     return (
       <div className="Forecast">
           <div className="forecast-container">

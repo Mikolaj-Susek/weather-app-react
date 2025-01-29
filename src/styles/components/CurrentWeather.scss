@@ -26,9 +26,12 @@ $height: 250px;
         font-size: 1.1rem;
       }
     }
-    .summary {
+    .city {
       margin-top: 1rem;
       font-size: 1.5rem;
+      .country {
+        font-size: 0.75rem;
+      }
     }
   }
   .other-infos {

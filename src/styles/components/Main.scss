@@ -7,8 +7,13 @@
 
   overflow-y: auto;
   overflow-x: hidden;
+  scrollbar-width: none;
 
   @media only screen and (max-width: 821px) {
     margin: 0 2rem;
   }
+}
+
+.Main::-webkit-scrollbar {
+  display: none;
 }

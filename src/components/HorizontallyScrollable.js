@@ -25,7 +25,7 @@ function HorizontallyScrollable({children, className = ''}) {
             window.removeEventListener('mouseup', handleMouseUp);
         }
 
-        // start moving when mousemove and mosedown
+        // start moving when mousemove and mousedown
         window.addEventListener('mousemove', handleMouseMove);
         // stop moving when mouseup
         window.addEventListener('mouseup', handleMouseUp);
