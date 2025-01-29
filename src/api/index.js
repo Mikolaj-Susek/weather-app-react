@@ -33,3 +33,28 @@ export async function getWeatherInformations(theLatitude, theLongitude, isCurren
 }
 
 
+export async function searchPlace(place){
+
+    const params = {
+        q: place,
+        format: 'json',
+        limit: '1'
+    }
+
+    const options = {
+        method: 'get',
+        url: 'https://nominatim.openstreetmap.org/search',
+        params: params,
+        headers: { }
+    };
+
+    try {
+        const response = await axios.request(options);
+        console.log(" ## CITY API WORKING ## ");
+        console.log(response.data)
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
+}
+

@@ -31,7 +31,7 @@ function WeatherProvider({children}) {
     }, [place]);
 
     return (
-        <WeatherContext.Provider value={{place, loading, currentWeather, dailyForecast}}>
+        <WeatherContext.Provider value={{setPlace, place, loading, currentWeather, dailyForecast}}>
             {children}
         </WeatherContext.Provider>
     )
