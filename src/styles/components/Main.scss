@@ -1,10 +1,12 @@
 @use '../variables/variables' as *;
 
 .Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 7rem;
   padding: 20px 0;
   height: $main-height;
-
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -16,4 +18,12 @@
 
 .Main::-webkit-scrollbar {
   display: none;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
 }

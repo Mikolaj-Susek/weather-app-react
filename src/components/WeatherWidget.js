@@ -22,7 +22,6 @@ function WeatherWidget({date,weatherCode,tempMax, tempMin,windSpeed,windDirectio
         }
     ).format(new Date(date));
 
-
     return (
         <div className="widget">
             <h3>{formattedDate}</h3>

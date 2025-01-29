@@ -10,8 +10,8 @@ $height: 250px;
   .temperature,
   .other-infos {
     padding: 1rem;
-    border: 1px solid var(--secondary-text-color);
     border-radius: 1rem;
+    max-width: 600px;
   }
 
   .temperature {

@@ -6,7 +6,7 @@ function WeatherIcon({weatherNumber}) {
 
     return (
         <img
-            src={`${process.env.PUBLIC_URL}/dist/weather_icons/set04/big/${iconNumber}.png`}
+            src={`${process.env.PUBLIC_URL}/dist/weather_icons/set02/big/${iconNumber}.png`}
             alt={iconNumber}
         />
     );

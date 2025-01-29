@@ -21,24 +21,24 @@ function mapWMOToIconCode(wmoCode) {
 
 const DEFAULT_PLACE =
     {
-        "place_id": 296234672,
+        "place_id": 171386686,
         "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
         "osm_type": "relation",
-        "osm_id": 170117,
-        "lat": "36.1672559",
-        "lon": "-115.148516",
+        "osm_id": 2816595,
+        "lat": "50.369624",
+        "lon": "19.289046489684473",
         "class": "boundary",
         "type": "administrative",
-        "place_rank": 16,
-        "importance": 0.7126172021753994,
-        "addresstype": "city",
-        "name": "Las Vegas",
-        "display_name": "Las Vegas, Clark County, Nevada, United States",
+        "place_rank": 14,
+        "importance": 0.5480537048112823,
+        "addresstype": "administrative",
+        "name": "Dąbrowa Górnicza",
+        "display_name": "Dąbrowa Górnicza, Górnośląsko-Zagłębiowska Metropolia, województwo śląskie, Polska",
         "boundingbox": [
-            "36.1295540",
-            "36.3808406",
-            "-115.4242845",
-            "-115.0620660"
+            "50.2915886",
+            "50.4479024",
+            "19.1549751",
+            "19.4877330"
         ]
     }
 

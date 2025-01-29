@@ -11,7 +11,6 @@ function Settings() {
         saveThemeToLocalStorage(!dark);
     }
 
-
     return <div className="Settings">
         <div className="theme-toggler">
             <div className="theme-buttons" onClick={toggleTheme}>

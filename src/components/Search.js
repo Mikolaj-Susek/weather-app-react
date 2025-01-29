@@ -20,7 +20,6 @@ function Search() {
         }
     }
 
-    // react fragment
     return <>
         <div className="search-container">
             <div className="search-icon">
